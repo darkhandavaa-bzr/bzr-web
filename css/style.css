@@ -588,6 +588,13 @@ input, textarea, select {
   font-style: italic;
 }
 
+.hero-desc {
+  max-width: 52rem;
+  margin-bottom: 2rem;
+  color: var(--color-taupe);
+  font-size: 1.8rem;
+}
+
 .hero-cta {
   display: flex;
   gap: 1.6rem;
@@ -640,7 +647,7 @@ input, textarea, select {
 }
 
 .stat {
-  grid-column: span 6;
+  grid-column: span 8;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -731,7 +738,7 @@ input, textarea, select {
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--grid-gap);
   padding: 4rem var(--grid-margin) 0;
   max-width: 160rem;
@@ -1504,7 +1511,7 @@ input, textarea, select {
   }
 
   .stat {
-    grid-column: span 3;
+    grid-column: 1 / -1;
   }
 
   .project-item {
