@@ -340,6 +340,13 @@ input, textarea, select {
   z-index: 1001;
 }
 
+.logo-img {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 0.6rem;
+  object-fit: contain;
+}
+
 .logo-text {
   font-family: var(--font-mono);
   font-size: 1.4rem;
