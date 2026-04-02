@@ -257,13 +257,9 @@
   // --- Scroll Reveal Animations ---
   function initScrollAnimations() {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Stagger delay based on element index within viewport batch
-          const delay = i * 80;
-          setTimeout(() => {
-            entry.target.classList.add('visible');
-          }, delay);
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
@@ -276,6 +272,28 @@
   }
 
   // --- Smooth Scroll for Nav Links ---
+  // Custom smooth scroll with configurable duration
+  function smoothScrollTo(targetY, duration) {
+    const startY = window.scrollY;
+    const diff = targetY - startY;
+    let startTime = null;
+
+    function easeInOutCubic(t) {
+      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const elapsed = timestamp - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = easeInOutCubic(progress);
+      window.scrollTo(0, startY + diff * eased);
+      if (progress < 1) requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+  }
+
   function initSmoothScroll() {
     const allLinks = [...els.navLinks, ...els.menuLinks, ...$$('a[href^="#"]')];
     const seen = new Set();
@@ -292,7 +310,7 @@
           if (target) {
             const headerOffset = 100;
             const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
-            window.scrollTo({ top, behavior: 'smooth' });
+            smoothScrollTo(top, 2000);
           }
         }
       });

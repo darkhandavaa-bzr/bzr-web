@@ -35,7 +35,7 @@
 
 html {
   font-size: 10px;
-  scroll-behavior: smooth;
+  /* scroll-behavior handled by JS for custom speed */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1437,8 +1437,8 @@ input, textarea, select {
 .anim-reveal {
   opacity: 0;
   transform: translateY(3rem);
-  transition: opacity 0.8s var(--ease-out-cubic),
-              transform 0.8s var(--ease-out-cubic);
+  transition: opacity 1.4s var(--ease-out-cubic),
+              transform 1.4s var(--ease-out-cubic);
 }
 
 .anim-reveal.visible {
