@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluid Glass — Architectural Glazing Specialists</title>
+  <meta name="description" content="Exceptional glazing for those who build with vision. Structural and architectural glass solutions by specialists.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor">
+    <span class="cursor-label" id="cursorLabel"></span>
+  </div>
+
+  <!-- Intro Animation -->
+  <div class="intro" id="intro">
+    <div class="intro-cube">
+      <div class="cube">
+        <div class="cube-face cube-front"></div>
+        <div class="cube-face cube-back"></div>
+        <div class="cube-face cube-left"></div>
+        <div class="cube-face cube-right"></div>
+        <div class="cube-face cube-top"></div>
+        <div class="cube-face cube-bottom"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <rect x="2" y="2" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+          <path d="M8 16h16M16 8v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">Fluid Glass</span>
+      </a>
+      <nav class="header-nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#collection" class="nav-link">Collection</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#showroom" class="nav-link">Showroom</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-glass" id="quoteBtn" data-cursor="Get a Quote">
+          <span>Get a Quote</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-overlay-bg"></div>
+    <nav class="menu-nav">
+      <a href="#about" class="menu-link" data-index="01">About</a>
+      <a href="#collection" class="menu-link" data-index="02">Collection</a>
+      <a href="#projects" class="menu-link" data-index="03">Projects</a>
+      <a href="#reviews" class="menu-link" data-index="04">Reviews</a>
+      <a href="#showroom" class="menu-link" data-index="05">Showroom</a>
+      <a href="#contact" class="menu-link" data-index="06">Contact</a>
+    </nav>
+    <div class="menu-footer">
+      <div class="menu-footer-col">
+        <span class="label">Email</span>
+        <a href="mailto:hello@fluidglass.co">hello@fluidglass.co</a>
+      </div>
+      <div class="menu-footer-col">
+        <span class="label">Phone</span>
+        <a href="tel:+442081567290">020 8156 7290</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="hero-video-fallback"></div>
+        <video class="hero-video" muted loop playsinline id="heroVideo"></video>
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-label anim-reveal">
+          <span class="label">Architectural Glazing</span>
+        </div>
+        <h1 class="hero-title anim-reveal">
+          <span class="line">Exceptional glazing</span>
+          <span class="line">for those who build</span>
+          <span class="line"><em>with vision</em></span>
+        </h1>
+        <div class="hero-cta anim-reveal">
+          <a href="#collection" class="btn btn-white">
+            <span>Explore Collection</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span class="label">Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-cream" id="about">
+      <div class="grid">
+        <div class="col-span-label anim-reveal">
+          <span class="label">About Us</span>
+        </div>
+        <div class="col-span-heading anim-reveal">
+          <h2 class="heading-lg">Where craft meets<br><em>innovation</em></h2>
+        </div>
+        <div class="col-span-text anim-reveal">
+          <p class="body-text">We are a team of architects, engineers and designers united by a passion for structural glass. Every project reflects our commitment to precision, beauty and performance.</p>
+          <p class="body-text">From concept to completion, we work closely with architects and builders to deliver glazing solutions that transform spaces and push boundaries.</p>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid stats-grid">
+        <div class="stat anim-reveal">
+          <span class="stat-number">250+</span>
+          <span class="stat-label label">Projects Completed</span>
+        </div>
+        <div class="stat anim-reveal">
+          <span class="stat-number">15</span>
+          <span class="stat-label label">Years Experience</span>
+        </div>
+        <div class="stat anim-reveal">
+          <span class="stat-number">98%</span>
+          <span class="stat-label label">Client Satisfaction</span>
+        </div>
+        <div class="stat anim-reveal">
+          <span class="stat-number">40+</span>
+          <span class="stat-label label">Awards Won</span>
+        </div>
+      </div>
+
+      <!-- Team -->
+      <div class="grid team-section">
+        <div class="col-span-label anim-reveal">
+          <span class="label">Our Team</span>
+        </div>
+        <div class="team-grid">
+          <div class="team-card anim-reveal" data-cursor="View Profile">
+            <div class="team-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+            <span class="team-name">James Whitfield</span>
+            <span class="label">Founder & Director</span>
+          </div>
+          <div class="team-card anim-reveal" data-cursor="View Profile">
+            <div class="team-img" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+            <span class="team-name">Sarah Chen</span>
+            <span class="label">Lead Architect</span>
+          </div>
+          <div class="team-card anim-reveal" data-cursor="View Profile">
+            <div class="team-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+            <span class="team-name">Marcus O'Brien</span>
+            <span class="label">Head of Engineering</span>
+          </div>
+          <div class="team-card anim-reveal" data-cursor="View Profile">
+            <div class="team-img" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+            <span class="team-name">Elena Vasquez</span>
+            <span class="label">Design Director</span>
+          </div>
+          <div class="team-card anim-reveal" data-cursor="View Profile">
+            <div class="team-img" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+            <span class="team-name">Tom Ashworth</span>
+            <span class="label">Project Manager</span>
+          </div>
+          <div class="team-card anim-reveal" data-cursor="View Profile">
+            <div class="team-img" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);"></div>
+            <span class="team-name">Priya Sharma</span>
+            <span class="label">Technical Consultant</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="section section-dark" id="collection">
+      <div class="grid">
+        <div class="col-span-label anim-reveal">
+          <span class="label">Our Collection</span>
+        </div>
+        <div class="col-span-heading anim-reveal">
+          <h2 class="heading-lg light">Designed for<br><em>architecture</em></h2>
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar anim-reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="doors">Doors</button>
+        <button class="filter-btn" data-filter="windows">Windows</button>
+        <button class="filter-btn" data-filter="structural">Structural</button>
+        <button class="filter-btn" data-filter="additional">Additional</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+        <div class="product-card anim-reveal" data-category="doors" data-cursor="View Product">
+          <div class="product-img" style="background: linear-gradient(135deg, #0c1821 0%, #1b2838 50%, #324a5f 100%);">
+            <div class="product-img-inner">
+              <svg viewBox="0 0 120 160" fill="none" class="product-svg">
+                <rect x="10" y="10" width="100" height="140" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <rect x="15" y="15" width="42" height="130" rx="1" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+                <rect x="63" y="15" width="42" height="130" rx="1" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+                <circle cx="54" cy="80" r="2" fill="rgba(255,255,255,0.4)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Pivot Doors</h3>
+            <span class="label">Minimal frame, maximum impact</span>
+          </div>
+        </div>
+
+        <div class="product-card anim-reveal" data-category="doors" data-cursor="View Product">
+          <div class="product-img" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">
+            <div class="product-img-inner">
+              <svg viewBox="0 0 120 160" fill="none" class="product-svg">
+                <rect x="10" y="10" width="100" height="140" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <rect x="15" y="15" width="90" height="130" rx="1" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+                <line x1="60" y1="15" x2="60" y2="145" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+                <rect x="18" y="80" width="6" height="12" rx="1" fill="rgba(255,255,255,0.3)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Sliding Doors</h3>
+            <span class="label">Seamless indoor-outdoor living</span>
+          </div>
+        </div>
+
+        <div class="product-card anim-reveal" data-category="windows" data-cursor="View Product">
+          <div class="product-img" style="background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%);">
+            <div class="product-img-inner">
+              <svg viewBox="0 0 120 120" fill="none" class="product-svg">
+                <rect x="10" y="10" width="100" height="100" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <rect x="15" y="15" width="90" height="90" rx="1" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+                <line x1="60" y1="15" x2="60" y2="105" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
+                <line x1="15" y1="60" x2="105" y2="60" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Fixed Windows</h3>
+            <span class="label">Structural clarity</span>
+          </div>
+        </div>
+
+        <div class="product-card anim-reveal" data-category="windows" data-cursor="View Product">
+          <div class="product-img" style="background: linear-gradient(135deg, #1a1a2e 0%, #2d3561 50%, #4a69bd 100%);">
+            <div class="product-img-inner">
+              <svg viewBox="0 0 120 160" fill="none" class="product-svg">
+                <rect x="10" y="10" width="100" height="140" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <rect x="15" y="15" width="90" height="60" rx="1" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+                <rect x="15" y="85" width="90" height="60" rx="1" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+                <rect x="50" y="85" width="20" height="4" rx="1" fill="rgba(255,255,255,0.3)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casement Windows</h3>
+            <span class="label">Classic form, modern engineering</span>
+          </div>
+        </div>
+
+        <div class="product-card anim-reveal" data-category="structural" data-cursor="View Product">
+          <div class="product-img" style="background: linear-gradient(135deg, #0b0c10 0%, #1f2833 50%, #45a29e 100%);">
+            <div class="product-img-inner">
+              <svg viewBox="0 0 160 120" fill="none" class="product-svg">
+                <path d="M10 110 L80 20 L150 110" stroke="rgba(255,255,255,0.3)" stroke-width="1" fill="rgba(255,255,255,0.03)"/>
+                <line x1="45" y1="65" x2="115" y2="65" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+                <line x1="80" y1="20" x2="80" y2="110" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Glass Roofs</h3>
+            <span class="label">Let the sky in</span>
+          </div>
+        </div>
+
+        <div class="product-card anim-reveal" data-category="structural" data-cursor="View Product">
+          <div class="product-img" style="background: linear-gradient(135deg, #141e30 0%, #243b55 100%);">
+            <div class="product-img-inner">
+              <svg viewBox="0 0 120 160" fill="none" class="product-svg">
+                <rect x="10" y="10" width="100" height="140" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <rect x="15" y="15" width="90" height="130" rx="1" fill="rgba(255,255,255,0.04)"/>
+                <line x1="15" y1="50" x2="105" y2="50" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+                <line x1="15" y1="85" x2="105" y2="85" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+                <line x1="15" y1="120" x2="105" y2="120" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Glass Walls</h3>
+            <span class="label">Transparent boundaries</span>
+          </div>
+        </div>
+
+        <div class="product-card anim-reveal" data-category="additional" data-cursor="View Product">
+          <div class="product-img" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);">
+            <div class="product-img-inner">
+              <svg viewBox="0 0 120 120" fill="none" class="product-svg">
+                <rect x="10" y="60" width="100" height="50" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="1" fill="rgba(255,255,255,0.04)"/>
+                <line x1="10" y1="60" x2="60" y2="30" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <line x1="110" y1="60" x2="60" y2="30" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Glass Balustrades</h3>
+            <span class="label">Elegant safety</span>
+          </div>
+        </div>
+
+        <div class="product-card anim-reveal" data-category="additional" data-cursor="View Product">
+          <div class="product-img" style="background: linear-gradient(135deg, #373b44 0%, #4286f4 100%);">
+            <div class="product-img-inner">
+              <svg viewBox="0 0 120 120" fill="none" class="product-svg">
+                <rect x="20" y="20" width="80" height="80" rx="40" stroke="rgba(255,255,255,0.3)" stroke-width="1" fill="rgba(255,255,255,0.04)"/>
+                <rect x="35" y="35" width="50" height="50" rx="25" stroke="rgba(255,255,255,0.15)" stroke-width="0.5" fill="rgba(255,255,255,0.03)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Oriel Windows</h3>
+            <span class="label">Bespoke curvature</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-cream" id="projects">
+      <div class="grid">
+        <div class="col-span-label anim-reveal">
+          <span class="label">Featured Projects</span>
+        </div>
+        <div class="col-span-heading anim-reveal">
+          <h2 class="heading-lg">Built with<br><em>precision</em></h2>
+        </div>
+      </div>
+
+      <div class="projects-list">
+        <a href="#" class="project-item anim-reveal" data-cursor="View Project">
+          <div class="project-index label">01</div>
+          <div class="project-content">
+            <h3 class="project-title">Harbour View Residence</h3>
+            <span class="project-meta label">London  ·  2024  ·  Residential</span>
+          </div>
+          <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+          <div class="project-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </a>
+        <a href="#" class="project-item anim-reveal" data-cursor="View Project">
+          <div class="project-index label">02</div>
+          <div class="project-content">
+            <h3 class="project-title">Elm Park Studio</h3>
+            <span class="project-meta label">Chelsea  ·  2024  ·  Commercial</span>
+          </div>
+          <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+          <div class="project-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </a>
+        <a href="#" class="project-item anim-reveal" data-cursor="View Project">
+          <div class="project-index label">03</div>
+          <div class="project-content">
+            <h3 class="project-title">Willow Creek House</h3>
+            <span class="project-meta label">Hampstead  ·  2023  ·  Residential</span>
+          </div>
+          <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+          <div class="project-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </a>
+        <a href="#" class="project-item anim-reveal" data-cursor="View Project">
+          <div class="project-index label">04</div>
+          <div class="project-content">
+            <h3 class="project-title">Northbank Tower</h3>
+            <span class="project-meta label">Canary Wharf  ·  2023  ·  Commercial</span>
+          </div>
+          <div class="project-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+          <div class="project-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section section-dark" id="reviews">
+      <div class="grid">
+        <div class="col-span-label anim-reveal">
+          <span class="label">Client Reviews</span>
+        </div>
+        <div class="col-span-heading anim-reveal">
+          <h2 class="heading-lg light">What our clients<br><em>say</em></h2>
+        </div>
+      </div>
+
+      <div class="reviews-carousel" id="reviewsCarousel">
+        <div class="reviews-track" id="reviewsTrack">
+          <div class="review-card">
+            <div class="review-stars">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+            </div>
+            <p class="review-text">"The attention to detail was extraordinary. Our pivot doors are the centrepiece of the entire house. The team guided us through every step with real expertise."</p>
+            <div class="review-author">
+              <span class="review-name">Richard & Anna M.</span>
+              <span class="label">Hampstead, London</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+            </div>
+            <p class="review-text">"Working with Fluid Glass was seamless from start to finish. They understood our architectural vision and delivered a structural glass wall that exceeded all expectations."</p>
+            <div class="review-author">
+              <span class="review-name">Studio Venn Architects</span>
+              <span class="label">Chelsea, London</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+            </div>
+            <p class="review-text">"Absolutely first-rate service. The glass roof they installed transformed our kitchen into the brightest room in the house. Professional, punctual, and a pleasure to work with."</p>
+            <div class="review-author">
+              <span class="review-name">David Hargreaves</span>
+              <span class="label">Richmond, London</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+            </div>
+            <p class="review-text">"We've specified Fluid Glass on three consecutive projects now. The consistency and quality of their work is unmatched in the industry. Highly recommended for any architect."</p>
+            <div class="review-author">
+              <span class="review-name">Kathryn Bell, RIBA</span>
+              <span class="label">Kensington, London</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.28l-4.77 2.43.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+            </div>
+            <p class="review-text">"From the initial consultation to final installation, every detail was handled with care. The sliding doors have completely opened up our living space to the garden."</p>
+            <div class="review-author">
+              <span class="review-name">James & Sophie P.</span>
+              <span class="label">Dulwich, London</span>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-nav">
+          <button class="review-nav-btn" id="reviewPrev" aria-label="Previous review">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M12 4l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="review-counter">
+            <span id="reviewCurrent">1</span> / <span id="reviewTotal">5</span>
+          </div>
+          <button class="review-nav-btn" id="reviewNext" aria-label="Next review">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M8 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showroom / Video Section -->
+    <section class="section section-cream" id="showroom">
+      <div class="grid">
+        <div class="col-span-label anim-reveal">
+          <span class="label">Our Showroom</span>
+        </div>
+        <div class="col-span-heading anim-reveal">
+          <h2 class="heading-lg">Visit us in<br><em>person</em></h2>
+        </div>
+        <div class="col-span-text anim-reveal">
+          <p class="body-text">Experience our glazing solutions first-hand at our London showroom. See, touch, and operate our full product range. Our team is on hand to discuss your project requirements.</p>
+        </div>
+      </div>
+
+      <!-- Video Player -->
+      <div class="video-player anim-reveal" id="videoPlayer">
+        <div class="video-container">
+          <video id="showroomVideo" poster="" preload="none"></video>
+          <div class="video-overlay" id="videoOverlay">
+            <button class="video-play-btn" id="videoPlayBtn" aria-label="Play video">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="23" stroke="currentColor" stroke-width="1"/>
+                <path d="M19 15l14 9-14 9V15z" fill="currentColor"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="video-controls" id="videoControls">
+          <button class="video-ctrl-btn" id="videoToggle" aria-label="Play/Pause">
+            <svg class="icon-play" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M4 2l10 6-10 6V2z"/>
+            </svg>
+            <svg class="icon-pause" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="display:none;">
+              <rect x="3" y="2" width="4" height="12"/><rect x="9" y="2" width="4" height="12"/>
+            </svg>
+          </button>
+          <div class="video-timeline">
+            <div class="video-progress" id="videoProgress"></div>
+            <input type="range" class="video-range" id="videoRange" min="0" max="100" value="0" step="0.1">
+          </div>
+          <span class="video-time label" id="videoTime">0:00 / 0:00</span>
+          <button class="video-ctrl-btn" id="videoMute" aria-label="Mute">
+            <svg class="icon-unmuted" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M2 5h3l4-3v12l-4-3H2V5zM12.5 4.5a5 5 0 010 7M11 6.5a2.5 2.5 0 010 3"/>
+            </svg>
+            <svg class="icon-muted" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="display:none;">
+              <path d="M2 5h3l4-3v12l-4-3H2V5zM12 6l4 4M16 6l-4 4"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Showroom Info -->
+      <div class="grid showroom-info">
+        <div class="showroom-card anim-reveal">
+          <span class="label">Address</span>
+          <p>Unit 12, The Glass Works<br>Bermondsey Street<br>London SE1 3XF</p>
+        </div>
+        <div class="showroom-card anim-reveal">
+          <span class="label">Opening Hours</span>
+          <p>Monday — Friday: 9am — 6pm<br>Saturday: 10am — 4pm<br>Sunday: By appointment</p>
+        </div>
+        <div class="showroom-card anim-reveal">
+          <span class="label">Get in Touch</span>
+          <p><a href="tel:+442081567290">020 8156 7290</a><br><a href="mailto:hello@fluidglass.co">hello@fluidglass.co</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner" id="contact">
+      <div class="cta-content anim-reveal">
+        <h2 class="heading-lg light">Start your project<br><em>today</em></h2>
+        <p class="body-text light">Tell us about your vision. We'll bring it to life in glass.</p>
+        <button class="btn btn-white" id="ctaQuoteBtn">
+          <span>Request a Quote</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo light">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect x="2" y="2" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 16h16M16 8v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-text">Fluid Glass</span>
+        </a>
+        <p class="footer-tagline">Exceptional glazing for those who build with vision.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <span class="label">Navigation</span>
+          <a href="#about">About</a>
+          <a href="#collection">Collection</a>
+          <a href="#projects">Projects</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#showroom">Showroom</a>
+        </div>
+        <div class="footer-col">
+          <span class="label">Legal</span>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+        <div class="footer-col">
+          <span class="label">Social</span>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="label">&copy; 2024 Fluid Glass Ltd. All rights reserved.</span>
+      <span class="label">Designed & Built in London</span>
+    </div>
+  </footer>
+
+  <!-- Quote Panel (Slide-out Overlay) -->
+  <div class="quote-panel" id="quotePanel">
+    <div class="quote-panel-bg" id="quotePanelBg"></div>
+    <div class="quote-panel-inner">
+      <div class="quote-panel-header">
+        <h3>Request a Quote</h3>
+        <button class="quote-close" id="quoteClose" aria-label="Close quote panel">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <form class="quote-form" id="quoteForm">
+        <!-- Honeypot -->
+        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="form-group">
+          <label class="label" for="qName">Full Name *</label>
+          <input type="text" id="qName" name="name" required placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label class="label" for="qEmail">Email *</label>
+          <input type="email" id="qEmail" name="email" required placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label class="label" for="qPhone">Phone</label>
+          <input type="tel" id="qPhone" name="phone" placeholder="+44 (0) 20 1234 5678">
+        </div>
+        <div class="form-group">
+          <label class="label">Products of Interest</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="products" value="doors">
+              <span class="checkbox-custom"></span>
+              <span>Doors</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="products" value="windows">
+              <span class="checkbox-custom"></span>
+              <span>Windows</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="products" value="structural">
+              <span class="checkbox-custom"></span>
+              <span>Structural</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="products" value="additional">
+              <span class="checkbox-custom"></span>
+              <span>Additional</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="label" for="qMessage">Project Details *</label>
+          <textarea id="qMessage" name="message" required placeholder="Tell us about your project..." rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="label" for="qFiles">Attachments</label>
+          <div class="file-upload" id="fileUpload">
+            <input type="file" id="qFiles" name="files" multiple accept=".pdf,.jpg,.jpeg,.png,.dwg">
+            <div class="file-upload-label">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <span>Drop files or click to upload</span>
+              <span class="label">PDF, JPG, PNG, DWG (max 10MB)</span>
+            </div>
+          </div>
+          <div class="file-list" id="fileList"></div>
+        </div>
+        <button type="submit" class="btn btn-dark btn-full" id="quoteSubmit">
+          <span>Send Request</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+      <div class="quote-success" id="quoteSuccess" style="display:none;">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2"/>
+          <path d="M20 32l8 8 16-16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Thank you!</h3>
+        <p>We've received your request and will be in touch within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
