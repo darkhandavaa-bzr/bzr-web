@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:fluid.glass)",
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:bzrcapital-5vpgt9jy.manus.space)",
+      "Read(//c/Users/Dell/Desktop/**)",
+      "Read(//c/Users/Dell/Downloads/**)"
+    ]
+  }
+}

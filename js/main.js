@@ -254,6 +254,26 @@
     }, { passive: true });
   }
 
+  // --- Hero Scroll Expansion ---
+  function initHeroExpansion() {
+    const heroBg = document.getElementById('heroBg');
+    if (!heroBg) return;
+
+    function updateHero() {
+      const scrollY = window.scrollY;
+      const vh = window.innerHeight;
+      // progress: 0 at top, 1 when scrolled one viewport height
+      const progress = Math.min(Math.max(scrollY / vh, 0), 1);
+
+      const inset = 25 * (1 - progress);
+      const radius = Math.round(24 * (1 - progress));
+      heroBg.style.clipPath = `inset(${inset.toFixed(2)}% round ${radius}px)`;
+    }
+
+    window.addEventListener('scroll', updateHero, { passive: true });
+    updateHero();
+  }
+
   // --- Scroll Reveal Animations ---
   function initScrollAnimations() {
     const observer = new IntersectionObserver((entries) => {
@@ -358,6 +378,7 @@
     initMenu();
     initQuotePanel();
     initReviews();
+    initHeroExpansion();
     initScrollAnimations();
     initSmoothScroll();
     initActiveNav();
